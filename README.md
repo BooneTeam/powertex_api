@@ -55,11 +55,6 @@ ______
 
 Order Items should include the following:
 
-First Header | Second Header | Third Header
------------- | ------------- | ------------
-Content Cell | Content Cell  | Content Cell
-Content Cell | Content Cell  | Content Cell
-
 ### Required
 
 
