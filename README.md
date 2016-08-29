@@ -50,42 +50,52 @@ _______________________________________________________
 
 Terrible format due to powertex api docs... should reformat 
 
+______
+
+
 Order Items should include the following:
 
-## Required
+First Header | Second Header | Third Header
+------------ | ------------- | ------------
+Content Cell | Content Cell  | Content Cell
+Content Cell | Content Cell  | Content Cell
+
+### Required
+
+
 Field | Data Type | Req? | Description
---- | --- | --- | --- 
+--- | --- | --- | --- |
 OrderDate | DateTime | Y | The effective date of the order. Must be a valid date and time value (e.g. 2016-01-01 13:00:00).
-OrderNumber | String | Y | The order number you have assigned to the order.
-BillToName | String | Y | Name for the billing address.
-BillToAddress | String | Y | Street address for the billing address.
-BillToCity | String | Y | City name for the billing address.
-BillToState | String | Y | State name for the billing address.
-BillToZip | String | Y | Postal code for the billing address.
-BillToCountry | String | Y | Two (2) letter country code for the billing address.
-ShipToName | String | Y | Name for the shipping address.
-ShipToAddress | String | Y | Street address for the shipping address.
-ShipToCity | String | Y | City name for the shipping address.
-ShipToState | String | Y | State name for the billing address.
-ShipToZip | String | Y | Postal code for the shipping address.
-ShipToCountry | String | Y | Two (2) letter country code for the shipping address.
-ShipToAddressType | String | Y | Indicate if the shipping address is a Residential or Commercial address.
-OrderSubTotal | Decimal | Y | The sub-total of the goods on the order, excluding tax, freight, handling, and processing charges.
-OrderTaxTotal | Decimal | Y | Total of all taxes collected on the order.
-OrderFreightTotal | Decimal | Y | Total amount of freight, processing, and handling charges on the order.
-PaymentMethod | String | Y | The method of payment used for the order (e.g. Credit Card, PayPal, Check, Cash).
-ShippingMethod | String | Y | The shipping method to be used for the order (e.g. USPS Priority Mail, UPS Ground, Next Day Air).
-OrderItems | Other | Y | A list of the items on the order. See details on the next page.
-ProductSku | String | Y | The SKU of the product associated with this item.
-ProductName | String | Y | The name of the product associated with this item.
-UnitPrice | Decimal | Y | The per-item amount charged for this item on the order.
-Quantity | Integer | Y | The number of this item purchased on the order.
-ItemSubTotal | Decimal | Y | The sub-total for this item on the order.
-Taxable | Boolean | Y | Indicates if this item was taxable on the order.
-ItemTaxAmount | Decimal | Y | The amount of tax charged for this item on the order.
+|OrderNumber | String | Y | The order number you have assigned to the order.
+|BillToName | String | Y | Name for the billing address.
+|BillToAddress | String | Y | Street address for the billing address.
+|BillToCity | String | Y | City name for the billing address.
+|BillToState | String | Y | State name for the billing address.
+|BillToZip | String | Y | Postal code for the billing address.
+|BillToCountry | String | Y | Two (2) letter country code for the billing address.
+|ShipToName | String | Y | Name for the shipping address.
+|ShipToAddress | String | Y | Street address for the shipping address.
+|ShipToCity | String | Y | City name for the shipping address.
+|ShipToState | String | Y | State name for the billing address.
+|ShipToZip | String | Y | Postal code for the shipping address.
+|ShipToCountry | String | Y | Two (2) letter country code for the shipping address.
+|ShipToAddressType | String | Y | Indicate if the shipping address is a Residential or Commercial address.
+|OrderSubTotal | Decimal | Y | The sub-total of the goods on the order, excluding tax, freight, handling, and processing charges.
+|OrderTaxTotal | Decimal | Y | Total of all taxes collected on the order.
+|OrderFreightTotal | Decimal | Y | Total amount of freight, processing, and handling charges on the order.
+|PaymentMethod | String | Y | The method of payment used for the order (e.g. Credit Card, PayPal, Check, Cash).
+|ShippingMethod | String | Y | The shipping method to be used for the order (e.g. USPS Priority Mail, UPS Ground, Next Day Air).
+|OrderItems | Other | Y | A list of the items on the order. See details on the next page.
+|ProductSku | String | Y | The SKU of the product associated with this item.
+|ProductName | String | Y | The name of the product associated with this item.
+|UnitPrice | Decimal | Y | The per-item amount charged for this item on the order.
+|Quantity | Integer | Y | The number of this item purchased on the order.
+|ItemSubTotal | Decimal | Y | The sub-total for this item on the order.
+|Taxable | Boolean | Y | Indicates if this item was taxable on the order.
+|ItemTaxAmount | Decimal | Y | The amount of tax charged for this item on the order.
+
 
 ## Not Required
- 
  Field | Data Type | Req? | Description
  ------ | ---------- | ------ | -----------
 BillToCompany | String | N | Company name for the billing address.
