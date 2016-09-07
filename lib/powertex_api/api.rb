@@ -41,8 +41,8 @@ module PowertexApi
         yield(response);
       end
 
-      def pst_request(route)
-        response = HTTParty.post(BASE_URL + route, headers)
+      def post_request(route,params)
+        response = HTTParty.post(BASE_URL + route, { headers: headers[:headers], body: params} )
         yield(response);
       end
 
