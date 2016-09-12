@@ -48,7 +48,7 @@ Req?
 Description
 _______________________________________________________
 
-Terrible format due to powertex api docs... should reformat 
+should reformat prolly
 
 ______
 
