@@ -3,6 +3,13 @@ module PowertexApi
     class << self
 
 
+      def all_by_base_sku
+        PowertexApi::Api.get_request('/api/products') do |response|
+          powertex_products  = response['$values']
+          powertex_products.group_by { |product| product['baseSku'] }
+        end
+      end
+
       # Names look like this currently
       # Red Hoodie | Large
       # Red Hoodie | Small
