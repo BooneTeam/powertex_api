@@ -42,7 +42,7 @@ module PowertexApi
       end
 
       def post_request(route,params)
-        response = HTTParty.post(BASE_URL + route, { headers: headers[:headers], body: params} )
+        response = HTTParty.post(BASE_URL + route, { headers: headers[:headers].merge( { 'Content-Type' => 'application/json' }), body: params.to_json,:debug_output => $stdout })
         yield(response);
       end
 
